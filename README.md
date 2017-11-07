@@ -1,20 +1,14 @@
-#Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+This demo application demonstrates how to implement communication between Actors and Angular frontend using SignalR. 
 
-#Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+Device actor's data (device profile, location, etc) can be updated by sending requests to an API. An API handles request, creates the command and publishes the command through the application. Command handler runs the code, which updates device actor's data and aggregated data. It sends event if command was executed sucessfuly. Aggregated data service sends messages to SignalR hub by groups with some duration, it allows to handle 100K+ updates. Angular client reads these messages and displays devices on the Bing map.
 
-#Build and Test
-TODO: Describe and show how to build your code and run the tests. 
-
-#Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
-
-If you want to learn more about creating good readme files then refer the following [guidelines](https://www.visualstudio.com/en-us/docs/git/create-a-readme). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+Frameworks and tools:
+- .NET 4.6.2
+- ASP.Net Core
+- FluentValidation
+- MediatR
+- Microsoft.ServiceFabric
+- SignalR
+- Angular 4
+- Angular CLI 1.5
+- Bing Maps
