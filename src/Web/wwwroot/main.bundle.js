@@ -1,89 +1,53 @@
-webpackJsonp([1,5],{
+webpackJsonp(["main"],{
 
-/***/ 199:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return environment; });
-// The file contents for the current environment will overwrite these during build.
-// The build system defaults to the dev environment which uses `environment.ts`, but if you do
-// `ng build --env=prod` then `environment.prod.ts` will be used instead.
-// The list of which env maps to which file can be found in `angular-cli.json`.
-var environment = {
-    production: false,
-    apiServiceAddress: 'http://localhost:8105/',
-    signalRServiceAddress: 'http://localhost:8104/'
-};
-//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/M2M.RealTime/M2M.Realtime.SampleApp/Web.Frontend/src/environment.js.map
-
-/***/ }),
-
-/***/ 303:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bing_map_directive__ = __webpack_require__(467);
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__bing_map_directive__["a"]; });
-
-//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/M2M.RealTime/M2M.Realtime.SampleApp/Web.Frontend/src/index.js.map
-
-/***/ }),
-
-/***/ 304:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__signalr_service__ = __webpack_require__(474);
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__signalr_service__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__devices_service__ = __webpack_require__(473);
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__devices_service__["a"]; });
-
-
-//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/M2M.RealTime/M2M.Realtime.SampleApp/Web.Frontend/src/index.js.map
-
-/***/ }),
-
-/***/ 351:
+/***/ "../../../../../src/$$_gendir lazy recursive":
 /***/ (function(module, exports) {
 
-function webpackEmptyContext(req) {
-	throw new Error("Cannot find module '" + req + "'.");
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
 }
-webpackEmptyContext.keys = function() { return []; };
-webpackEmptyContext.resolve = webpackEmptyContext;
-module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 351;
-
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "../../../../../src/$$_gendir lazy recursive";
 
 /***/ }),
 
-/***/ 352:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "../../../../../src/app/app.component.css":
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(443);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_module__ = __webpack_require__(464);
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
 
 
+// module
+exports.push([module.i, "", ""]);
+
+// exports
 
 
-if (__WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment */].production) {
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["a" /* enableProdMode */])();
-}
-__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/M2M.RealTime/M2M.Realtime.SampleApp/Web.Frontend/src/main.js.map
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 463:
+/***/ "../../../../../src/app/app.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<dashboard></dashboard>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/app.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -98,32 +62,32 @@ var AppComponent = (function () {
     function AppComponent() {
     }
     AppComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["V" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* Component */])({
             selector: 'app-root',
-            template: __webpack_require__(633),
-            styles: [__webpack_require__(631)]
+            template: __webpack_require__("../../../../../src/app/app.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/app.component.css")]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;
 }());
-//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/M2M.RealTime/M2M.Realtime.SampleApp/Web.Frontend/src/app.component.js.map
+//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/Demo-ServiceFabric-RealTimeCommunication/src/Web.Frontend/src/app.component.js.map
 
 /***/ }),
 
-/***/ 464:
+/***/ "../../../../../src/app/app.module.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(191);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(434);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(285);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_services__ = __webpack_require__(304);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_directives__ = __webpack_require__(303);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(463);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_dashboard__ = __webpack_require__(466);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("../../../platform-browser/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__("../../../http/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_services__ = __webpack_require__("../../../../../src/services/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_directives__ = __webpack_require__("../../../../../src/directives/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_dashboard__ = __webpack_require__("../../../../../src/dashboard/index.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -145,7 +109,7 @@ var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* NgModule */])({
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["P" /* NgModule */])({
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */],
                 __WEBPACK_IMPORTED_MODULE_7_dashboard__["a" /* DashboardComponent */],
@@ -154,11 +118,11 @@ var AppModule = (function () {
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
-                __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */]
+                __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* HttpModule */]
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_4_services__["a" /* SignalRService */],
-                __WEBPACK_IMPORTED_MODULE_4_services__["b" /* DevicesService */]
+                __WEBPACK_IMPORTED_MODULE_4_services__["b" /* SignalRService */],
+                __WEBPACK_IMPORTED_MODULE_4_services__["a" /* DevicesService */]
             ],
             bootstrap: [
                 __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */]
@@ -168,19 +132,26 @@ var AppModule = (function () {
     ], AppModule);
     return AppModule;
 }());
-//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/M2M.RealTime/M2M.Realtime.SampleApp/Web.Frontend/src/app.module.js.map
+//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/Demo-ServiceFabric-RealTimeCommunication/src/Web.Frontend/src/app.module.js.map
 
 /***/ }),
 
-/***/ 465:
+/***/ "../../../../../src/dashboard/dashboard.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row\">\r\n    <div class=\"col-sm-4\">\r\n        <h4>Devices and Locations (left side list displays first {{displayLeftListItemsCount}} items):</h4>\r\n        <ul style=\"height: 700px; overflow:auto;\">\r\n            <li *ngFor=\"let item of dataToDisplayOnView\">\r\n                DeviceId: {{ item.deviceId.id }}; Latitude: {{ item.lastLocation.latitude }}; Longitude: {{ item.lastLocation.longitude }}\r\n            </li>\r\n        </ul>\r\n    </div>\r\n    <div class=\"col-sm-8\">\r\n        <h4>Cell values (in minutes): {{cellData}}</h4>\r\n        <bing-map (mapLoaded)=\"onMapLoaded()\"\r\n                  (markerSelected)=\"onMarkerSelected($event)\"\r\n                  (cellSelected)=\"onCellSelected($event)\"\r\n                  (cellOver)=\"onCellOver($event)\"\r\n                  style=\"height: 700px; position:absolute;\">\r\n        </bing-map>\r\n    </div>\r\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/dashboard/dashboard.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_models__ = __webpack_require__(471);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_services__ = __webpack_require__(304);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_directives__ = __webpack_require__(303);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashboardComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_models__ = __webpack_require__("../../../../../src/models/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_services__ = __webpack_require__("../../../../../src/services/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_directives__ = __webpack_require__("../../../../../src/directives/index.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -338,41 +309,41 @@ var DashboardComponent = (function () {
         }
     };
     __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_3_directives__["a" /* BingMapDirective */]), 
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_3_directives__["a" /* BingMapDirective */]), 
         __metadata('design:type', (typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3_directives__["a" /* BingMapDirective */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3_directives__["a" /* BingMapDirective */]) === 'function' && _a) || Object)
     ], DashboardComponent.prototype, "bingMapDirective", void 0);
     DashboardComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["V" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* Component */])({
             selector: 'dashboard',
-            template: __webpack_require__(634),
-            changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* ChangeDetectionStrategy */].OnPush
+            template: __webpack_require__("../../../../../src/dashboard/dashboard.component.html"),
+            changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* ChangeDetectionStrategy */].OnPush
         }), 
-        __metadata('design:paramtypes', [(typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ChangeDetectorRef */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ChangeDetectorRef */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgZone */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgZone */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2_services__["a" /* SignalRService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2_services__["a" /* SignalRService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2_services__["b" /* DevicesService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2_services__["b" /* DevicesService */]) === 'function' && _e) || Object])
+        __metadata('design:paramtypes', [(typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["q" /* ChangeDetectorRef */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_core__["q" /* ChangeDetectorRef */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["S" /* NgZone */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_core__["S" /* NgZone */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2_services__["b" /* SignalRService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2_services__["b" /* SignalRService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2_services__["a" /* DevicesService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2_services__["a" /* DevicesService */]) === 'function' && _e) || Object])
     ], DashboardComponent);
     return DashboardComponent;
     var _a, _b, _c, _d, _e;
 }());
-//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/M2M.RealTime/M2M.Realtime.SampleApp/Web.Frontend/src/dashboard.component.js.map
+//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/Demo-ServiceFabric-RealTimeCommunication/src/Web.Frontend/src/dashboard.component.js.map
 
 /***/ }),
 
-/***/ 466:
+/***/ "../../../../../src/dashboard/index.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dashboard_component__ = __webpack_require__(465);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dashboard_component__ = __webpack_require__("../../../../../src/dashboard/dashboard.component.ts");
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__dashboard_component__["a"]; });
 
-//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/M2M.RealTime/M2M.Realtime.SampleApp/Web.Frontend/src/index.js.map
+//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/Demo-ServiceFabric-RealTimeCommunication/src/Web.Frontend/src/index.js.map
 
 /***/ }),
 
-/***/ 467:
+/***/ "../../../../../src/directives/bing-map.directive.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BingMapDirective; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -390,10 +361,10 @@ var BingMapDirective = (function () {
         this.clusterLayerGridSize = 100;
         this.dataBinningRadius = 25;
         this.markers = [];
-        this.mapLoaded = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* EventEmitter */](true);
-        this.markerSelected = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* EventEmitter */](true);
-        this.cellSelected = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* EventEmitter */](true);
-        this.cellOver = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* EventEmitter */](true);
+        this.mapLoaded = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* EventEmitter */](true);
+        this.markerSelected = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* EventEmitter */](true);
+        this.cellSelected = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* EventEmitter */](true);
+        this.cellOver = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* EventEmitter */](true);
     }
     BingMapDirective.prototype.waitForScriptLoads = function (loadCount) {
         var _this = this;
@@ -506,35 +477,85 @@ var BingMapDirective = (function () {
         options.visible = false;
     };
     BingMapDirective = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* Directive */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Directive */])({
             selector: 'bing-map',
             outputs: ['mapLoaded', 'markerSelected', 'cellSelected', 'cellOver'],
             inputs: []
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* ElementRef */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* ElementRef */]) === 'function' && _a) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* ElementRef */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* ElementRef */]) === 'function' && _a) || Object])
     ], BingMapDirective);
     return BingMapDirective;
     var _a;
 }());
-//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/M2M.RealTime/M2M.Realtime.SampleApp/Web.Frontend/src/bing-map.directive.js.map
+//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/Demo-ServiceFabric-RealTimeCommunication/src/Web.Frontend/src/bing-map.directive.js.map
 
 /***/ }),
 
-/***/ 468:
+/***/ "../../../../../src/directives/index.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bing_map_directive__ = __webpack_require__("../../../../../src/directives/bing-map.directive.ts");
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__bing_map_directive__["a"]; });
+
+//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/Demo-ServiceFabric-RealTimeCommunication/src/Web.Frontend/src/index.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/environments/environment.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return environment; });
+// The file contents for the current environment will overwrite these during build.
+// The build system defaults to the dev environment which uses `environment.ts`, but if you do
+// `ng build --env=prod` then `environment.prod.ts` will be used instead.
+// The list of which env maps to which file can be found in `angular-cli.json`.
+var environment = {
+    production: false,
+    apiServiceAddress: 'http://localhost:8105/',
+    signalRServiceAddress: 'http://localhost:8104/'
+};
+//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/Demo-ServiceFabric-RealTimeCommunication/src/Web.Frontend/src/environment.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/main.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__("../../../platform-browser-dynamic/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__("../../../../../src/environments/environment.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_module__ = __webpack_require__("../../../../../src/app/app.module.ts");
+
+
+
+
+if (__WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment */].production) {
+    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_24" /* enableProdMode */])();
+}
+Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
+//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/Demo-ServiceFabric-RealTimeCommunication/src/Web.Frontend/src/main.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/models/device.ts":
 /***/ (function(module, exports) {
 
-//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/M2M.RealTime/M2M.Realtime.SampleApp/Web.Frontend/src/device.js.map
+//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/Demo-ServiceFabric-RealTimeCommunication/src/Web.Frontend/src/device.js.map
 
 /***/ }),
 
-/***/ 469:
+/***/ "../../../../../src/models/deviceId.ts":
 /***/ (function(module, exports) {
 
-//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/M2M.RealTime/M2M.Realtime.SampleApp/Web.Frontend/src/deviceId.js.map
+//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/Demo-ServiceFabric-RealTimeCommunication/src/Web.Frontend/src/deviceId.js.map
 
 /***/ }),
 
-/***/ 470:
+/***/ "../../../../../src/models/deviceStatus.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -545,50 +566,50 @@ var DeviceStatusEnum;
     DeviceStatusEnum[DeviceStatusEnum["Warning"] = 1] = "Warning";
     DeviceStatusEnum[DeviceStatusEnum["Ok"] = 2] = "Ok";
 })(DeviceStatusEnum || (DeviceStatusEnum = {}));
-//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/M2M.RealTime/M2M.Realtime.SampleApp/Web.Frontend/src/deviceStatus.js.map
+//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/Demo-ServiceFabric-RealTimeCommunication/src/Web.Frontend/src/deviceStatus.js.map
 
 /***/ }),
 
-/***/ 471:
+/***/ "../../../../../src/models/index.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__deviceId__ = __webpack_require__(469);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__deviceId__ = __webpack_require__("../../../../../src/models/deviceId.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__deviceId___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__deviceId__);
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_0__deviceId__, "DeviceStatusEnum")) __webpack_require__.d(__webpack_exports__, "DeviceStatusEnum", function() { return __WEBPACK_IMPORTED_MODULE_0__deviceId__["DeviceStatusEnum"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__device__ = __webpack_require__(468);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__device__ = __webpack_require__("../../../../../src/models/device.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__device___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__device__);
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_1__device__, "DeviceStatusEnum")) __webpack_require__.d(__webpack_exports__, "DeviceStatusEnum", function() { return __WEBPACK_IMPORTED_MODULE_1__device__["DeviceStatusEnum"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__location__ = __webpack_require__(472);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__location__ = __webpack_require__("../../../../../src/models/location.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__location___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__location__);
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_2__location__, "DeviceStatusEnum")) __webpack_require__.d(__webpack_exports__, "DeviceStatusEnum", function() { return __WEBPACK_IMPORTED_MODULE_2__location__["DeviceStatusEnum"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__deviceStatus__ = __webpack_require__(470);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__deviceStatus__ = __webpack_require__("../../../../../src/models/deviceStatus.ts");
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "DeviceStatusEnum", function() { return __WEBPACK_IMPORTED_MODULE_3__deviceStatus__["a"]; });
 
 
 
 
-//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/M2M.RealTime/M2M.Realtime.SampleApp/Web.Frontend/src/index.js.map
+//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/Demo-ServiceFabric-RealTimeCommunication/src/Web.Frontend/src/index.js.map
 
 /***/ }),
 
-/***/ 472:
+/***/ "../../../../../src/models/location.ts":
 /***/ (function(module, exports) {
 
-//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/M2M.RealTime/M2M.Realtime.SampleApp/Web.Frontend/src/location.js.map
+//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/Demo-ServiceFabric-RealTimeCommunication/src/Web.Frontend/src/location.js.map
 
 /***/ }),
 
-/***/ 473:
+/***/ "../../../../../src/services/devices.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(285);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_environments_environment__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__ = __webpack_require__(636);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DevicesService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_environments_environment__ = __webpack_require__("../../../../../src/environments/environment.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/toPromise.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -625,25 +646,38 @@ var DevicesService = (function () {
             .then(function (x) { return x.json(); });
     };
     DevicesService = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === 'function' && _a) || Object])
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["H" /* Injectable */])(), 
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]) === 'function' && _a) || Object])
     ], DevicesService);
     return DevicesService;
     var _a;
 }());
-//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/M2M.RealTime/M2M.Realtime.SampleApp/Web.Frontend/src/devices.service.js.map
+//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/Demo-ServiceFabric-RealTimeCommunication/src/Web.Frontend/src/devices.service.js.map
 
 /***/ }),
 
-/***/ 474:
+/***/ "../../../../../src/services/index.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_environments_environment__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__signalr_service__ = __webpack_require__("../../../../../src/services/signalr.service.ts");
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__signalr_service__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__devices_service__ = __webpack_require__("../../../../../src/services/devices.service.ts");
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__devices_service__["a"]; });
+
+
+//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/Demo-ServiceFabric-RealTimeCommunication/src/Web.Frontend/src/index.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/services/signalr.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SignalRService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__("../../../../rxjs/_esm5/Observable.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_environments_environment__ = __webpack_require__("../../../../../src/environments/environment.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -686,7 +720,7 @@ var SignalRService = (function () {
     SignalRService.prototype.startDevicesProxy = function () {
         var _this = this;
         this.devicesProxy = this.connection.createHubProxy('DevicesHub');
-        this.devicesData = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"](function (observer) {
+        this.devicesData = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["a" /* Observable */](function (observer) {
             _this.devicesProxy.on("statusesReceived", function (statuses, session) {
                 var message = { data: statuses, session: session };
                 observer.next(message);
@@ -697,43 +731,22 @@ var SignalRService = (function () {
         return this.devicesData;
     };
     SignalRService = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(), 
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["H" /* Injectable */])(), 
         __metadata('design:paramtypes', [])
     ], SignalRService);
     return SignalRService;
 }());
-//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/M2M.RealTime/M2M.Realtime.SampleApp/Web.Frontend/src/signalr.service.js.map
+//# sourceMappingURL=C:/Users/Vitaliy/Source/Repos/Demo-ServiceFabric-RealTimeCommunication/src/Web.Frontend/src/signalr.service.js.map
 
 /***/ }),
 
-/***/ 631:
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
-/***/ 633:
-/***/ (function(module, exports) {
-
-module.exports = "<dashboard></dashboard>\r\n"
-
-/***/ }),
-
-/***/ 634:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"row\">\r\n    <div class=\"col-sm-4\">\r\n        <h4>Devices and Locations (left side list displays first {{displayLeftListItemsCount}} items):</h4>\r\n        <ul style=\"height: 700px; overflow:auto;\">\r\n            <li *ngFor=\"let item of dataToDisplayOnView\">\r\n                DeviceId: {{ item.deviceId.id }}; Latitude: {{ item.lastLocation.latitude }}; Longitude: {{ item.lastLocation.longitude }}\r\n            </li>\r\n        </ul>\r\n    </div>\r\n    <div class=\"col-sm-8\">\r\n        <h4>Cell values (in minutes): {{cellData}}</h4>\r\n        <bing-map (mapLoaded)=\"onMapLoaded()\"\r\n                  (markerSelected)=\"onMarkerSelected($event)\"\r\n                  (cellSelected)=\"onCellSelected($event)\"\r\n                  (cellOver)=\"onCellOver($event)\"\r\n                  style=\"height: 700px; position:absolute;\">\r\n        </bing-map>\r\n    </div>\r\n</div>"
-
-/***/ }),
-
-/***/ 650:
+/***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(352);
+module.exports = __webpack_require__("../../../../../src/main.ts");
 
 
 /***/ })
 
-},[650]);
-//# sourceMappingURL=main.bundle.map
+},[0]);
+//# sourceMappingURL=main.bundle.js.map
