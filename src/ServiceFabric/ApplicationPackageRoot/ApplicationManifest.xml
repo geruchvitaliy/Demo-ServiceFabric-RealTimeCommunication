@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationManifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ApplicationTypeName="ServiceFabricType" ApplicationTypeVersion="1.0.0" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Parameters>
+    <Parameter Name="DeviceTypeStatefulService_MinReplicaSetSize" DefaultValue="3" />
+    <Parameter Name="DeviceTypeStatefulService_PartitionCount" DefaultValue="1" />
+    <Parameter Name="DeviceTypeStatefulService_TargetReplicaSetSize" DefaultValue="3" />
+    <Parameter Name="SignalR_InstanceCount" DefaultValue="-1" />
+    <Parameter Name="Web_InstanceCount" DefaultValue="-1" />
+    <Parameter Name="Api_InstanceCount" DefaultValue="-1" />
+    <Parameter Name="DeviceActorService_PartitionCount" DefaultValue="10" />
+    <Parameter Name="DeviceActorService_MinReplicaSetSize" DefaultValue="3" />
+    <Parameter Name="DeviceActorService_TargetReplicaSetSize" DefaultValue="3" />
+    <Parameter Name="DeviceTypeActorService_PartitionCount" DefaultValue="10" />
+    <Parameter Name="DeviceTypeActorService_MinReplicaSetSize" DefaultValue="3" />
+    <Parameter Name="DeviceTypeActorService_TargetReplicaSetSize" DefaultValue="3" />
+  </Parameters>
+  <!-- Import the ServiceManifest from the ServicePackage. The ServiceManifestName and ServiceManifestVersion 
+       should match the Name and Version attributes of the ServiceManifest element defined in the 
+       ServiceManifest.xml file. -->
+  <ServiceManifestImport>
+    <ServiceManifestRef ServiceManifestName="DeviceTypeStatefulServicePkg" ServiceManifestVersion="1.0.0" />
+    <ConfigOverrides />
+  </ServiceManifestImport>
+  <ServiceManifestImport>
+    <ServiceManifestRef ServiceManifestName="SignalRPkg" ServiceManifestVersion="1.0.0" />
+    <ConfigOverrides />
+  </ServiceManifestImport>
+  <ServiceManifestImport>
+    <ServiceManifestRef ServiceManifestName="DeviceTypeActorPkg" ServiceManifestVersion="1.0.0" />
+  </ServiceManifestImport>
+  <ServiceManifestImport>
+    <ServiceManifestRef ServiceManifestName="WebPkg" ServiceManifestVersion="1.0.0" />
+    <ConfigOverrides />
+  </ServiceManifestImport>
+  <ServiceManifestImport>
+    <ServiceManifestRef ServiceManifestName="DeviceActorPkg" ServiceManifestVersion="1.0.0" />
+  </ServiceManifestImport>
+  <ServiceManifestImport>
+    <ServiceManifestRef ServiceManifestName="ApiPkg" ServiceManifestVersion="1.0.0" />
+    <ConfigOverrides />
+  </ServiceManifestImport>
+  <DefaultServices>
+    <!-- The section below creates instances of service types, when an instance of this 
+         application type is created. You can also create one or more instances of service type using the 
+         ServiceFabric PowerShell module.
+         
+         The attribute ServiceTypeName below must match the name defined in the imported ServiceManifest.xml file. -->
+    <Service Name="DeviceTypeStatefulService">
+      <StatefulService ServiceTypeName="DeviceTypeStatefulServiceType" TargetReplicaSetSize="[DeviceTypeStatefulService_TargetReplicaSetSize]" MinReplicaSetSize="[DeviceTypeStatefulService_MinReplicaSetSize]">
+        <UniformInt64Partition PartitionCount="[DeviceTypeStatefulService_PartitionCount]" LowKey="-9223372036854775808" HighKey="9223372036854775807" />
+      </StatefulService>
+    </Service>
+    <Service Name="SignalR">
+      <StatelessService ServiceTypeName="SignalRType" InstanceCount="[SignalR_InstanceCount]">
+        <SingletonPartition />
+      </StatelessService>
+    </Service>
+    <Service Name="Web">
+      <StatelessService ServiceTypeName="WebType" InstanceCount="[Web_InstanceCount]">
+        <SingletonPartition />
+      </StatelessService>
+    </Service>
+    <Service Name="Api">
+      <StatelessService ServiceTypeName="ApiType" InstanceCount="[Api_InstanceCount]">
+        <SingletonPartition />
+      </StatelessService>
+    </Service>
+    <Service Name="DeviceActorService" GeneratedIdRef="ccfe69ad-ea57-487c-98a3-1c05fecea8a4|Persisted">
+      <StatefulService ServiceTypeName="DeviceActorServiceType" TargetReplicaSetSize="[DeviceActorService_TargetReplicaSetSize]" MinReplicaSetSize="[DeviceActorService_MinReplicaSetSize]">
+        <UniformInt64Partition PartitionCount="[DeviceActorService_PartitionCount]" LowKey="-9223372036854775808" HighKey="9223372036854775807" />
+      </StatefulService>
+    </Service>
+    <Service Name="DeviceTypeActorService" GeneratedIdRef="1f9e6a8b-4cf8-4da9-8680-10ecd4cc365a|Persisted">
+      <StatefulService ServiceTypeName="DeviceTypeActorServiceType" TargetReplicaSetSize="[DeviceTypeActorService_TargetReplicaSetSize]" MinReplicaSetSize="[DeviceTypeActorService_MinReplicaSetSize]">
+        <UniformInt64Partition PartitionCount="[DeviceTypeActorService_PartitionCount]" LowKey="-9223372036854775808" HighKey="9223372036854775807" />
+      </StatefulService>
+    </Service>
+  </DefaultServices>
+</ApplicationManifest>

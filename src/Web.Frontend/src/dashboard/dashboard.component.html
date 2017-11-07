@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-sm-4">
+        <h4>Devices and Locations (left side list displays first {{displayLeftListItemsCount}} items):</h4>
+        <ul style="height: 700px; overflow:auto;">
+            <li *ngFor="let item of dataToDisplayOnView">
+                DeviceId: {{ item.deviceId.id }}; Latitude: {{ item.lastLocation.latitude }}; Longitude: {{ item.lastLocation.longitude }}
+            </li>
+        </ul>
+    </div>
+    <div class="col-sm-8">
+        <h4>Cell values (in minutes): {{cellData}}</h4>
+        <bing-map (mapLoaded)="onMapLoaded()"
+                  (markerSelected)="onMarkerSelected($event)"
+                  (cellSelected)="onCellSelected($event)"
+                  (cellOver)="onCellOver($event)"
+                  style="height: 700px; position:absolute;">
+        </bing-map>
+    </div>
+</div>
